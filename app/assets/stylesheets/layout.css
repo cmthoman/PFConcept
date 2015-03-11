@@ -228,15 +228,15 @@ a {
 }
 
 .green_triangle_bg {
-	background-image: image-url('images/resources/g.png');
+	background-image: image-url('resources/g.png');
 }
 
 .red_triangle_bg {
-	background-image: image-url('images/resources/b.png');
+	background-image: image-url('resources/b.png');
 }
 
 .purple_triangle_bg {
-	background-image: image-url('images/resources/c.png');
+	background-image: image-url('resources/c.png');
 }
 
 .blue_btn {
