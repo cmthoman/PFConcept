@@ -15,6 +15,8 @@ img {
 }
 
 #content {
+	clear: both;
+	overflow: visible;
 	max-width: 1024px;
 	margin: 0 auto;
 	padding: 0 5%;
@@ -138,12 +140,13 @@ nav ul{
 
 nav ul li {
 	display: inline-block;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-weight: bold;
 	margin: 0 2px;
 	padding: 7px 7px;
 	text-shadow: 1px 2px 2px rgba(0,0,0,0.7);
-	letter-spacing: 0.08em;
+	letter-spacing: 0.1em;
+	font-family: 'Raleway', sans-serif;
 }
 
 nav ul li:first-child{
@@ -185,44 +188,37 @@ footer img:first-child {
 PAGE: HOME
 ***************************************************************/
 #content h2 {
-	margin: 20px 0 50px 1%;
+	margin: 40px 0 40px 1%;
+}
+
+#landing_wrapper {
+	width: 100%;
+	min-height: 450px;
+	background-color: #FFF;
+	clear: both;
+	overflow: visible;
 }
 
 #landing {
-	clear: both;
-	height: 450px;
-	width: 100%;
-	background: #FFF;
-	overflow: visible;
-	border-bottom: 1px solid rgba(0, 0, 0, .2);
-}
-
-#landing #landing_wrapper {
 	max-width: 1024px;
-	margin: 0 auto;
+	margin: 30px auto 0;
+	padding: 0 5%;
+	clear: both;
+	overflow: visible;
 }
 
-#landing #slogan p {
+#landing p {
 	float: left;
-	margin: 50px 1%;
-	width: 41%;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.5em;
+	width: 45%;
+	margin: 60px 1%;
+	font-size: 1.4rem;
+	font-family: "Raleway";
+	letter-spacing: .1em;
 }
 
-#landing #slogan #headline {
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.75em;
+#landing p span {
+	font-size: 2.5rem;
 }
-
-/*#landing #banner {
-	float: right;
-	width: 55%;
-	margin: 50px 1%;
-	height: 270px;
-	background: black;
-	border-radius: 10px;
-}*/
 
 /***************************************************************
 COLORS
