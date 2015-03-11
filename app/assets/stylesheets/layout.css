@@ -224,7 +224,7 @@ a {
 }
 
 .blue_triangle_bg {
-	background-image: image-url('images/resources/r.png');
+	background-image: image-url('resources/r.png');
 }
 
 .green_triangle_bg {
