@@ -2,13 +2,47 @@
 <html>
 <head>
   <title>Premierforensics</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<header>
+		<h1>PREMIER FORENSIC SOLUTIONS</h1>
+		<ul>
+			<li>Digital Forensics</li>
+			<li>Cyber Security</li>
+			<li>Electronic Discovery</li>
+			<li>Private Investigations</li>
+			<li>Intelligence</li>
+			<li>Data Visualization</li>
+			<li>Expert Testimony</li>
+		</ul>
+		<nav>
+			<ul>
+				<li><%= link_to "home", {:controller => 'static_pages', :action => 'home'} %></li>
+				<li><%= link_to "services", {:controller => 'static_pages', :action => 'services'} %></li>
+				<li><%= link_to "government", {:controller => 'static_pages', :action => 'government'} %></li>
+				<li><%= link_to "about", {:controller => 'static_pages', :action => 'about'} %></li>
+				<li><%= link_to "contact", {:controller => 'static_pages', :action => 'contact'} %></li>
+				<li><%= link_to "resources", {:controller => 'static_pages', :action => 'resources'} %></li>
+				<li><%= link_to "blog", "https://premierforensicsolutions.wordpress.com/" %></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="content">
+		<%= yield %>
+	</section>
+	<footer>
+		<div class="grey_break"></div>
+		<p>Follow Us</p>
+		<%= image_tag "icons/facebook.png", {alt: "facebook"} %>
+		<%= image_tag "icons/linked_in.png", {alt: "linked_in"} %>
+		<%= image_tag "icons/twitter.png", {alt: "twitter"} %>
+		<%= image_tag "icons/word_press.png", {alt: "word_press"} %>
+		<p>© 2015 All Rights Reserved</p>
+	</footer>
 </body>
 </html>

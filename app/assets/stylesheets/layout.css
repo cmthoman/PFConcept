@@ -1,0 +1,225 @@
+/***************************************************************
+GENERAL STYLING
+***************************************************************/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+#content {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.grey_break {
+	height: 1px;
+	background: radial-gradient(#9A8F8B, transparent);
+	margin: 5px 0;
+	clear: both;
+}
+
+
+.content_column {
+	float: left;
+	width: 48%;
+	margin: 0 1% 20px;
+}
+
+.content_box {
+	float: left;
+	width: 95%;
+	margin: 0 0 5%;
+	padding: 2.5%;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 10px 24px -8px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 10px 24px -8px rgba(0,0,0,0.45);
+	box-shadow: 0px 10px 24px -8px rgba(0,0,0,0.45);
+	border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.content_box:nth-child(2) { 
+	clear: both;
+}
+
+/***************************************************************
+HEADER
+***************************************************************/
+
+header {
+	float: left;
+	width: 100%;
+	margin: 0 0 30px;
+	padding: 0;
+	-webkit-box-shadow: 0px 10px 24px -8px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 10px 24px -8px rgba(0,0,0,0.45);
+	box-shadow: 0px 10px 24px -8px rgba(0,0,0,0.45);
+}
+
+header h1 {
+	font-size: 2.1em;
+	margin: 15px 0 5px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	font-weight: 700;
+	letter-spacing: .08em
+}
+
+header ul {
+	display: block;
+	width: 600px;
+	margin: 0 auto 40px;
+	padding: 0;
+	text-align: center;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+header ul li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+header ul li:first-child {
+	margin-left: 0;
+}
+
+/***************************************************************
+NAVIGATION
+***************************************************************/
+
+nav {
+	float: left;
+	width: 100%;
+}
+
+nav ul{
+	text-align: center;
+	width: 100%; 
+	margin: 0;
+	padding: 0;
+	font-size: 1.25em;
+}
+
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0 2px;
+	padding: 3px 7px;
+	text-shadow: 1px 2px 2px rgba(0,0,0,0.7);
+}
+
+nav ul li:first-child{
+	margin-left: 0;
+}
+
+nav a {
+	color: #FFF;
+}
+/***************************************************************
+FOOTER
+***************************************************************/
+
+footer {
+	max-width: 1024px;
+	margin: 30px auto 0;
+	padding: 0 5%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+footer p {
+	font-weight: bold;
+}
+
+footer img {
+	border-radius: 5px;
+	margin-left: 10px;
+	width: 32px;
+	height: 32px;
+}
+
+footer img:first-child {
+	margin-left: 0px;
+}
+
+/***************************************************************
+PAGE: HOME
+***************************************************************/
+#content h2 {
+	margin: 0 0 20px 1%;
+}
+
+/***************************************************************
+COLORS
+***************************************************************/
+
+/*******************************
+PALLET:
+#6E7C82 - Dark Blue
+#A7C7D2 - Mid Blue
+#C8DCE3 - Light Blue
+#B3ABA8 - Light Grey
+#E3E3E3 - Neutral Grey
+#9A8F8B - Dark Grey
+#FFFFFF - WHITE
+*******************************/
+
+body {
+	background-color: #E3E3E3;
+	color: #4c4c4c;
+}
+
+header {
+	background-color: rgba(110, 124, 130, 1);
+	color: #fff;
+	border-bottom: 5px solid #A7C7D2;
+}
+
+nav ul li:hover {
+	background-color: #A7C7D2;
+	cursor: pointer;
+	border-radius: 5px 5px 0 0;
+}
+
+.blue_triangle_bg {
+	background-image: url('resources/r.png');
+}
+
+.green_triangle_bg {
+	background-image: url('resources/g.png');
+}
+
+.red_triangle_bg {
+	background-image: url('resources/b.png');
+}
+
+.purple_triangle_bg {
+	background-image: url('resources/c.png');
+}

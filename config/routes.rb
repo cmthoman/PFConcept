@@ -1,9 +1,37 @@
 Rails.application.routes.draw do
+  get 'static_pages/home'
+
+  get 'static_pages/services'
+
+  get 'static_pages/digital_forensics'
+
+  get 'static_pages/cyber_security'
+
+  get 'static_pages/intelligence'
+
+  get 'static_pages/for_law_enforcement'
+
+  get 'static_pages/expert_witness_services'
+
+  get 'static_pages/private_investigations'
+
+  get 'static_pages/training'
+
+  get 'static_pages/government'
+
+  get 'static_pages/about'
+
+  get 'static_pages/contact'
+
+  get 'static_pages/resources'
+
+  get 'static_pages/blog'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'static_pages#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
